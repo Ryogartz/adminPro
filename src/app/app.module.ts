@@ -11,6 +11,8 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register/register.component';
 import { FormsModule } from '@angular/forms';
+//Servicio global
+import { ServiceModule } from './services/service.module';
 
 
 
@@ -25,9 +27,12 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     PageModule,
     APP_ROUTES,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
-  providers: [],
+  providers: [
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
